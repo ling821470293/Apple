@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#gg{
+				/*width: 1349px;*/
+				height: 40px;
+				background-color: #444;
+			}
+			#gg div{
+				width: 976px;
+				height: 40px;
+				margin: 0 auto;
+				text-align: right;
+				line-height: 40px;
+				color: #a8a8aa;
+				font-size: 12px;
+			}
+			#nav{
+				width: 100%;
+				height: 44px;
+				background-color: rgba(0,0,0,0.8);
+				position: sticky;
+				top: 0;
+				
+			}
+			#ng{
+				width: 1000px;
+				height: 44px;
+				margin: 0 auto;
+			}
+			#nav a{
+				width: 105px;
+				height: 44px;
+				color: #fff;
+				font-size: 14px;
+				text-align: center;
+				line-height: 44px;
+				text-decoration: none;
+				float: left;
+			}
+			.logo{
+				background-image: url(img/logo.svg);
+				background-repeat: no-repeat;
+				background-position: left;
+			}
+			.search{
+				background-image: url(img/search.svg);
+				background-repeat: no-repeat;
+				background-position: right;
+			}
+			.buy{
+				background-image: url(img/bag.svg);
+				background-repeat: no-repeat;
+				background-position: right;
+			}
+			#nav a:hover{
+				color: #C4BDB2;
+				cursor: pointer;
+			}
+			#bd a:hover{
+				text-decoration: underline;
+			}
+			.n1{
+				width: 1349px;
+				height: 580px;
+				background-color: white;
+				overflow: hidden;
+				margin-bottom: 10px;
+			}
+			h1{
+				padding-top: 50px;
+				text-align: center;
+				font-size: 55px;
+			}
+			p{
+				padding-top: 15px;
+				text-align: center;
+				font-size: 24px;
+			}
+			.n1 div{
+				margin-left: 540px;
+			}
+			.n1 a{
+				display: inline-block;
+				text-decoration: none;
+				color: #0070c9;
+				font-size: 21px;
+				margin: 23px 25px 62px;
+			}
+			.n1 img{
+				margin-left: 150px;
+			}
+			.bg{
+				background-color: #f5f5f5;
+			}
+			.bg1{
+				color: white;
+				background-image: url(img/macbook.jpg);
+				background-size: cover;
+				background-position: center;
+				width: 100%;				
+				background-repeat: no-repeat;
+			}
+			.bg1 a{
+				color: white;
+			}
+			#left{
+				width: 48%;
+				height: 580px;
+				display: inline-block;
+				padding: 10px;
+				float: left;
+			}
+			#right{
+				width: 48%;
+				height: 580px;
+				display: inline-block;
+				padding: 10px;
+				float: left;
+			}
+			.b1{
+				width: 100%;
+				height: 100%;
+			}
+			.bg2 #left .b1{
+				background-image: url(img/shop_for_college.jpg);
+				background-position: center;
+			}
+			.bg2 #right .b1{
+				background-image: url(img/behind_the_mac_makato.jpg);
+				background-position: center;
+			}
+			#left h2{
+				font-size: 35px;
+				color: black;
+				padding-top: 50px;
+				padding-left: 200px;
+			}
+			#left p{
+				font-size: 17px;				
+			}
+			#right h2{
+				font-size: 35px;
+				color: #fff;
+				padding-top: 420px;
+				padding-left: 200px;
+			}
+			#right a{			
+				height: 20px;
+				color: white;
+				line-height: 20px;
+				padding-top: 12px;
+				text-decoration: none;
+			}
+			.a1{
+				width: 300px;
+				text-align: right;
+				float: left;
+			}
+			.a2{
+				width: 300px;
+				text-align: left;
+				float: right;
+			}
+			.bg3 #left .b1{			
+				background: #FAEFEC;
+				background-image: url(img/iphone_8.jpg);
+				background-position: center bottom;
+				background-repeat: no-repeat;
+			}
+			.bg3 #right .b1{
+				background-image: url(img/ios.jpg);
+				background-position: center;
+			}
+			.n2 h2{
+				width: 40%;
+				padding-top: 50px;
+				text-align: center;
+				font-size: 55px;
+			}
+			.n2 p{
+				width: 100%;
+				padding-top: 15px;
+				text-align: center;
+				font-size: 24px;
+			}
+			.n2 a{
+				display: inline-block;
+				text-decoration: none;
+				color: #0070c9;
+				font-size: 16px;
+				margin: 15px 10px 62px;
+				float: left;
+			}
+			.n2 .a1{
+				width: 300px;
+				text-align: right;
+				float: left;
+			}
+			.n2 .a2{
+				width: 280px;
+				text-align: left;
+				float: right;
+			}
+			.n2 #right h2{
+				color: black;
+				padding-top: 50px;
+				font-size: 40px;
+			}
+			.n2 #right p{
+				font-size: 18px;
+				margin-top: -10px;
+				margin-left: 10px;
+			}
+			.bgl #right .b1{			
+				background: #FAEFEC;
+				background-image: url(img/trade_up.jpg);
+				background-position: center bottom;
+				background-repeat: no-repeat;
+			}
+			.bgl #right h2{
+				width: 580px;
+				margin-left: -160px;
+				color: black;
+				padding-top: 50px;
+				font-size: 35px;
+			}
+			.bgl #left p{
+				margin-top: -5px;
+				font-size: 18px;
+			}
+			.bgl #left{
+				background-color: #EEEEEE;
+			}
+			.w1{
+				margin-top: 30px;
+				margin-left: 250px;
+			}
+			.w2{
+				margin-left: 100px;
+				margin-top: -40px;
+			}
+			.bgl{
+				width: 1349px;
+				height: 580px;
+				overflow: hidden;
+			}
+			.foot{
+				width: 1349px;
+				height: 466px;
+				background-color: #EEEEEE;
+				margin-top: 10px;
+			}
+			.bo{
+				width: 980px;
+				height: 337px;
+				margin-left: 184px;
+				padding-top: 50px;
+				font-size: 11px;
+				color: black;
+			}
+			li{
+				list-style: none;
+				height: 24px;
+				line-height: 16px;
+			}
+			.foot a{
+				text-decoration: none;
+				font-size: 9px;
+				color: #444444;
+				
+			}
+			.h1{
+				width: 196px;
+				height: 246px;
+				float: left;
+			}
+			#bt{
+				width: 980px;
+				margin-left: 184px;
+				height: 113px;
+			}
+			#bt p{
+				font-size: 11px;
+				color: #888;
+				text-align: left;
+				display: inline;
+				padding-bottom: 10px;
+				line-height: 30px;
+			}
+			#bt .btn{
+				color: #0070C9;
+			}
+			.last{
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="gg">
+			<div id="">
+				<span id="ggao">&lt;广告&gt;</span>
+			</div>
+		</div>
+		<div id="nav">
+			<div id="ng">
+				<a class="logo" href=""></a>
+				<a href="">Mac</a>
+				<a href="">iPad</a>
+				<a href="">iPhone</a>
+				<a href="">Watch</a>
+				<a href="">Music</a>
+				<a href="">技术支持</a>
+				<a class="search" href=""></a>
+				<a class="buy" href=""></a>
+			</div>			
+		</div>
+		<div id="bd">					
+			<div class="n1">
+				<h1>iPhone X</h1>
+				<p>hello,未来</p>
+				<div>
+					<a href="">进一步了解></a>
+					<a href="">购买></a>
+				</div>			
+				<img src="img/iphone_x.jpg"/>		
+			</div>
+			<div class="n1 bg">
+				<h1>iPad</h1>
+				<p>这个电脑，拿掉了电脑的条条框框</p>
+				<div>
+					<a href="">进一步了解></a>
+					<a href="">购买></a>
+				</div>			
+				<img src="img/ipad.jpg" style="margin-left: 200px;"/>		
+			</div>
+			<div class="n1 bg1">
+				<h1>MacBook Pro</h1>
+				<p>更强劲，更专业的强劲</p>
+				<div>
+					<a href="">进一步了解></a>
+					<a href="">购买></a>
+				</div>			
+			</div>
+			<div class="bg2">
+				<div id="left">
+					<div class="b1">
+						<h2>暑期热点呈现</h2>
+						<p>为高校生活购买 Mac 或 iPad Pro，Beats 耳机搭配其中。</p>
+					</div>
+				</div>
+				<div id="right">
+					<div class="b1">
+						<h2>敬 Mac 背后的你</h2>
+						<div>
+							<a class="a1" href="">观看影片</a>
+							<a class="a2" href="">探索Mac ></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="n2 bg3">
+				<div id="left">
+					<div class="b1">
+						<h2>iPhone 8</h2>
+						<p>新一代iPhone。</p>
+						<div>
+							<a class="a1" href="">进一步了解></a>
+							<a class="a2" href="">购买></a>
+						</div>	
+					</div>
+				</div>
+				<div id="right">
+					<div class="b1">
+						<h2>iOS 12</h2>
+						<p>力量与你同在。</p>
+					</div>
+				</div>
+			</div>
+			<div class="n2 bgl">
+				<div id="right">
+					<div class="b1">
+						<h2>iPhone 年年焕新计划</h2>
+						<p>每年都有一部新 iPhone，</p>
+						<p>并享受AppleCare+ 全方位服务计划。</p>
+					</div>
+				</div>
+				<div id="left">
+					<div class="b1">
+						<img class="w1" src="img/watch_series_3_logo.png"/>
+						<p>带上自由，戴上蜂窝网络。</p>
+						<div>
+							<a class="a1" href="">进一步了解></a>
+							<a class="a2" href="">购买></a>						
+						</div>					
+						<img class="w2" src="img/watch_series_3.jpg"/>	
+					</div>
+				</div>			
+			</div>
+			<div class="foot">
+				<div class="bo">
+					<div class="h1">
+						<li>选购及了解</li>
+						<li><a href="">Mac</a></li>
+						<li><a href="">iPad</a></li>
+						<li><a href="">iPhone</a></li>
+						<li><a href="">Watch</a></li>
+						<li><a href="">Music</a></li>
+						<li><a href="">iTunes</a></li>
+						<li><a href="">iPod touch</a></li>
+						<li><a href="">配件</a></li>
+						<li><a href="">App Store 充值卡</a></li>
+					</div>
+					<div class="h1">
+						<li>App Store 商店</li>
+						<li><a href="">查找零售店</a></li>
+						<li><a href="">Genius Bar 天才吧</a></li>
+						<li><a href="">Today at Apple</a></li>
+						<li><a href="">Apple 夏令营</a></li>
+						<li><a href="">Field Trip 课外活动</a></li>
+						<li><a href="">Apple Store App</a></li>
+						<li><a href="">翻新和优惠</a></li>
+						<li><a href="">分期付款</a></li>
+						<li><a href="">Apple GiveBack 回馈计划</a></li>
+						<li><a href="">订单状态</a></li>
+						<li><a href="">选购帮助</a></li>				
+					</div>
+					<div class="h1">
+						<li>教育应用</li>
+						<li><a href="">Apple 与教育</a></li>
+						<li><a href="">高校师生选购</a></li>
+						<br />
+						<li>商务应用</li>
+						<li><a href="">Apple 与商务</a></li>
+						<li><a href="">商务选购</a></li>
+					</div>
+					<div class="h1">
+						<li>账户</li>
+						<li><a href="">管理你的 Apple ID</a></li>
+						<li><a href="">Apple Store 账户</a></li>
+						<li><a href="">iCloud.com</a></li>
+						<br />
+						<li>Apple 价值观</li>
+						<li><a href="">辅助功能</a></li>
+						<li><a href="">环境责任</a></li>
+						<li><a href="">隐私</a></li>
+						<li><a href="">供应商责任</a></li>
+					</div>
+					<div class="h1">
+						<li>关于 Apple</li>
+						<li><a href="">Newsroom</a></li>
+						<li><a href="">Apple 管理层</a></li>
+						<li><a href="">工作机会</a></li>
+						<li><a href="">创造就业</a></li>
+						<li><a href="">活动</a></li>
+						<li><a href="">联系 Apple</a></li>
+					</div>
+				</div>
+				<div id="bt">
+					<p>更多选购方式：前往</p><a class="btn" href="">Apple Store 零售店</a><p>，致电 400-666-8800 
+						或查找在你附近的</p><a class="btn" href="">授权经销商</a><p>。</p>
+					<hr />
+					<p>Copyright © 2018 Apple Inc. 保留所有权利。</p>&emsp;&emsp;
+					<a href="">隐私政策</a> |
+					<a href="">使用条款</a> |
+					<a href="">销售政策</a> |
+					<a href="">法律信息</a> |
+					<a href="">网站地图</a>
+					<a class="last" href=""><img src="img/zg.png"/>中国</a>
+					<br />
+					<p>京公安网安备 11010502008968 京ICP备10214630</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
